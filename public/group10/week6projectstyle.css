@@ -1,0 +1,786 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Header and navigation section*/
+
+    .dropdown {
+        /*position: fixed;*/
+        display: none;
+      } 
+    .dropbtn {
+        height: 3em;
+        width: 3em;
+      }
+       .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color:hsla(120, 100%, 13%, 0.6);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        
+      }
+      
+      .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #ddd;
+    color: black;
+    }
+      
+      .dropdown:hover .dropdown-content {display: block;}
+      
+      .dropdown:hover .dropbtn {background-color: #3e8e41;}
+      @media only screen and (max-width:600px){
+        .dropdown{
+            display: inline-block;
+            position: fixed;
+        }
+      }
+      
+ 
+  /*End of menubar*/
+
+
+
+header{
+    background-color:hsla(120, 100%, 13%, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    position: fixed;
+    width: 100%;
+    height: 4em;
+}
+header ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header ul li {
+    list-style-type: none; 
+}
+header ul li a{
+    margin-right: 2em;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    padding: 0.5em;
+    
+    
+}
+ .logo{
+    margin-left: 2em;
+    padding-top: 0.5em;
+    font-size: 1.6em;
+    color:lightgreen;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+.logo img{
+height: 4em;
+width: 4em;
+}
+header ul li a:hover{
+    background-color: hsla(120, 80%, 44%, 0.9);
+    border-radius: 1em;
+}
+/*End of header section design*/
+/*Header styling for small devices different devices*/
+@media only screen and (max-width:600px){
+    header{
+        display: none;
+    }
+    
+    
+}
+@media only screen and (max-width:831px){
+    header{
+        font-size: .7em;
+    }
+}
+
+
+/* Beginning of first section code*/
+
+.first-section{
+    width: 100%;
+    height: 42em;
+    
+}
+.image img{
+    width: 100%;
+    height: 42em;
+    
+    
+}
+@media only screen and (max-width:600px){
+    .image img{
+        height: 20em;
+        width: 100%;
+    }
+    .first-section{
+        height:21em ;
+    }
+}
+
+/* End of first section */
+/*Intermediate section*/
+.inter1-2{
+    display: flex;
+    justify-content: center;
+    font-size: 1.7em;
+    width: 100%;
+    height: 5em;
+    
+    
+}
+.inter1-2 h1{
+    border-bottom: 3px black solid;
+    width: fit-content;
+    padding: 0.3em;
+    color: hsla(180, 100%, 10%, 0.9);
+}
+@media only screen and (max-width:600px){
+    .inter1-2{
+        font-size: 1.5em;
+        height: 5em;
+    }
+}
+
+/* Beinning of second section */
+
+.second-section{
+    display: flex;
+    margin-top: 1em;
+    justify-content: space-around;
+    width: 100%;
+    height: 31em;
+    padding-top: 0.5em;
+    margin-bottom: 4em;
+    
+    
+   
+}
+@media only screen and (max-width:600px){
+    .second-section{
+        display: block;
+        margin-top: 2em;
+    }
+
+}
+.left-second-section{
+    width: 55%; 
+}
+.second-section div img{
+    width: 100%;
+    height: 30em;
+    border: 4px hsla(120, 19%, 92%, 0.9) groove;
+}
+.second-section div img:hover{
+box-shadow: 0.5em 0.5em 0.5em #004b4b;
+}
+/* Styling for small phones for section 2*/
+@media only screen and (max-width:600px){
+    .left-second-section{
+        width: 90%;
+        margin: 0 4%;
+        height: 25em;
+    }
+    .second-section  div img{
+        height: 24em;
+    } 
+    
+}
+.right-second-section{
+    width: 30%;
+}
+.right-second-section p{
+    font-size: 1.4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    text-align: justify;
+    line-height: 1.4em;
+}
+.right-second-section h1{
+    color:#7d0000;
+    text-align: center;
+}
+@media only screen and (max-width:600px){
+    .right-second-section{
+        width: 90%;
+        display: block;
+        height: 25em;
+        text-align: center;
+        margin-left: 5%;
+    }
+    .second-section div p{
+        font-size: 1.2em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 90%;
+        text-align: justify;
+        line-height: 1.5em;
+        padding-left: 1em;
+    }
+    
+}
+/*Styling for deveices between 1115px*/
+@media only screen and (max-width:1150px){
+    
+    .right-second-section p{
+        font-size: 1.1em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 90%;
+        text-align: justify;
+        line-height: 1.5em;
+        padding-left: 0.4em;
+
+}
+}
+
+.right-second-section button {
+    
+    margin-left: 35%;
+    background-color: hsla(180, 100%, 10%, 0.9);
+    height: 3em;
+    border-radius: 1em;
+    
+}
+.right-second-section button:hover{
+    background-color: #7d0000;
+    
+}
+.right-second-section button a{
+    color: white;
+    text-decoration: none;
+}
+.right-second-section button a:hover{
+    background-color:#7d0000;
+    
+}
+
+@media only screen and (max-width:600px){
+    .right-second-section button {
+    
+        margin-left:0;
+    }
+}
+/*for breakpoint 874*/
+@media only screen and (max-width:874px){
+    .right-second-section{
+        font-size: 0.9em;
+    }
+
+}
+/*breakpoint for 686*/
+@media only screen and (max-width:686px){
+    .right-second-section{
+        font-size: 0.8em;
+    }
+}
+/*Breakpoint for 450px*/
+@media only screen and (max-width:450px){
+.right-second-section{
+    height: fit-content;
+    
+}
+}
+
+
+/*end of second section*/
+
+/*Beginning of third section*/
+.third-section{
+    height: 21em;
+    font-size: 1.4em;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 3em;
+    display: flex; 
+    justify-content: space-around;
+    border-top: 2px hsla(180, 100%, 10%, 0.9) solid;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+.third-section div img{
+    height: 20em;
+    width: 90%;    
+}
+.third-section-right{
+    width: 50%;
+    height: 20em;
+}
+.third-section-left{
+    width: 30%;
+    font-size: 1.3em;
+    color:hsla(180, 100%, 10%, 0.9);
+    box-sizing: border-box;
+}
+.third-section-left li{
+    border-bottom: 2px hsla(180, 100%, 10%, 0.9) solid;
+    line-height: 1.5em;
+    list-style-type: none;
+    
+
+}
+.third-section-left ul{
+    margin-left: 0px;
+}
+
+/*Beginning of styling of third section for small devices*/
+
+@media only screen and (max-width:600px){
+    .third-section{
+        margin-top: 11em;
+        display: block;
+        height: 20em;
+    }
+    .third-section-left{
+        width: 90%;
+        text-align: center;
+        margin-left: 5%;
+        
+    }
+    .third-section-right{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .third-section div img{
+        width: 100%;
+        height: 18em;
+        
+    }
+
+}
+/*Styling for breakpoint 450px*/
+@media only screen and (max-width:450px){
+    .third-section{
+      margin-top: 14em;  
+    }
+}
+/*Styling for breakpoint 380*/
+@media only screen and (max-width:380px){
+    .third-section{
+        margin-top: 18em;
+    }
+}
+/*Styling for breakpoint 308*/
+@media only screen and (max-width:308px){
+    .third-section{
+        margin-top: 22em;
+    }
+}
+/*styling for breakpoint 250*/
+@media only screen and (max-width:250px){
+    .third-section{
+        margin-top: 27em;
+    }
+}
+/*styling for breakpoint 223*/
+@media only screen and (max-width:223px){
+    .third-section{
+        margin-top:30em;
+
+    }
+}
+/*For breakpoint 880px*/
+@media only screen and (max-width:880px){
+.third-section{
+    font-size: 1em;
+}
+}
+/*Styling for breakpoint 612px*/
+@media only screen and (max-width:612px){
+    .third-section{
+        height: 22em;
+    }
+}
+
+/*End of third section*/
+
+/*Beginning of fourth section*/
+.fourth-section{
+    display: flex;
+    justify-content: space-around;
+    height: 25em;
+    margin-bottom: 1.5em;
+    width: 100%;   
+}
+.fourth-section div{
+    width: 30%;
+    text-align: center;
+    border-bottom: 2px black solid;
+    
+}
+.fourth-section div img{
+    height: 16em;
+    width: 90%;
+    border: 4px hsla(120, 80%, 44%, 0.9) groove;
+}
+
+
+.fourth-section div p{
+    width: 70%;
+    text-align: justify;
+    margin-left: 15%;
+    margin-top: -1em;
+    font-size: 1.1em;
+}
+/*styling for small devices for  fourth section*/
+@media only screen and (max-width:1102px){
+    .fourth-section div{
+        height: 28em;
+    }
+}
+@media only screen and (max-width:1000px){
+    .fourth-section div p{
+       text-align: center; 
+    }
+}
+
+@media only screen and (max-width:930px){
+    .fourth-section div{
+        height: 30em;
+        
+    }
+}
+
+
+@media only screen and (max-width:427px){
+#service1{
+    margin-top: 16em;
+}
+}
+
+@media only screen and (max-width:600px){
+    .fourth-section{
+        display: block;
+        margin-top: 14em;
+    }
+    #service1 img, #service2 img, #service3 img{
+        height: 15em;
+        width: 80%;
+    }
+    #service1, #service2, #service3{
+        height: 24em;
+        width:100%;
+        padding-top: 2em;
+    }
+    
+}
+@media only screen and (max-width:340px){
+    #service1, #service3, #service2{
+        height: 26em;
+    }
+}
+@media only screen and (max-width:311px){
+    #service1, #service3, #service2{
+        height: 30em;
+    }
+    #service1{
+        margin-top: 16em;
+        
+    }
+}
+/*Styling for break point 625px*/
+@media only screen and (max-width:625px){
+    .fourth-section div{
+        height: 30em;
+    }
+}
+
+/*Styling for breakpoint of 686px*/
+@media only screen and (max-width:686px){
+    .fourth-section{
+        height:30em ;
+    }
+}
+
+/*Stulinh for breakpoint 812*/
+@media only screen and (max-width:845px){
+    .fourth-section div img{
+        height: 13em;
+    }
+}
+/* Styling for breakpoint 1005*/
+@media only screen and (max-width:1005px){
+    .fourth-section{
+        height: 28em;
+    }
+}
+
+
+
+@media only screen and (max-width:295px){
+    #service1 {
+        margin-top: 20em;
+    }
+    #service1, #service2, #service3{
+        height: 26em;
+    }
+}
+@media only screen and (max-width:227px){
+    #service1{
+        margin-top: 24em;
+        height: 400em;
+    }
+}
+@media only screen and (max-width:285px){
+#service1{
+    height: 30em;
+}
+}
+
+/*End of fourth section*/
+
+/* Beginning of section 5 */
+.section5{
+display: flex;
+justify-content: center;
+font-size: 1.6em;
+color: #004b4b;
+font-style: oblique;
+width: 100%;
+height: 4em;
+box-sizing: border-box;
+text-align: center;
+}
+/*Beginning of styling for small devices section5*/
+@media only screen and (max-width:600px){
+    .section5{
+        text-align: center;
+        margin-top: 31em;
+        height: fit-content;
+    }
+}
+
+@media only screen and (max-width:332px){
+.section5{
+    margin-top:32em ;
+}
+}
+
+@media only screen and (max-width:340px){
+    .section5{
+        margin-top:36em ;
+    }
+    }
+    @media only screen and (max-width:312px){
+        .section5{
+            margin-top:42em ;
+        }
+        }
+
+@media only screen and (max-width:285px){
+    .section5{
+        margin-top: 43em;
+    }
+}
+@media only screen and (max-width:295px){
+    .section5{
+        margin-top:40em ;
+    }
+    }
+@media only screen and (max-width:227px){
+    .section5{
+        margin-top: 38em;
+}
+}
+
+
+/*End of section 5*/
+.section6{
+    display: flex;
+    justify-content: space-around;
+    height: 23em;
+    margin-top: 0em;
+    margin-bottom: 2em;
+    width: 100%;
+    
+}
+.section6 div{
+    width: 30%;
+    text-align: center;
+    padding: 1em 0 0 0;
+    height: fit-content;
+    
+}
+.section6 div span{
+    font-weight: bold;
+}
+.section6 div img{
+    height: 13em;
+    border: 4px hsla(120, 80%, 44%, 0.9) groove;
+    border-radius: 1px;
+    width: 80%;
+} 
+.section6 div p{
+    /*text-align: center;*/
+    width: 70%;
+    margin-left: 15%;
+    font-size: 1.1em;
+}
+
+/*Beginning of styling for small device*/
+@media only screen and (max-width:730px){
+    #tour img, #wed img, #pat img{
+        width: 100%;
+        height: 13.5em;
+    }
+}
+@media only screen and (max-width:400px){
+.section6 div{
+    margin-bottom: 2em;
+}
+}
+
+@media only screen and (max-width:600px){
+    .section6{
+        display: block;
+        height: 19em;
+       margin-top:1em;
+       width: 100%;
+    }
+    #tour, #wed, #pat{
+        width: 90%;
+        height: 24em;
+        margin-left: 5%;
+    }
+    #tour img, #wed img, #pat img{
+        width: 90%;
+        height: 15em;
+    }
+}
+@media only screen and (max-width:1200px){
+    #tour img, #wed img, #pat img{
+        width: 90%;
+    }
+    .section6 div{
+        width: 32%;
+    }
+}
+
+@media only screen and (max-width:625px){
+    .section6 div{
+        width:30% ;
+    }
+}
+/*Styling for breakpoint 696*/
+@media only screen and (max-width:696px){
+    .section6{
+        height: 28em;
+    }
+}
+/*End of styling for section 6*/
+
+/*Beginning of footer*/
+.foots{
+    width: 100%;
+    height: 17em;
+    background-color: hsla(120, 100%, 20%, 0.9);
+}
+.foot{
+    width: 100%;
+    height: 14em;
+    
+    color: white;
+    display: flex;
+}
+/*styling for break point 620px*/
+.foot div{
+    width: 32%;
+    text-align: justify;
+    margin-left: 8%;
+}
+.foot div li{
+    list-style-type: none;
+    line-height: 1.5em;
+}
+.foot div li a{
+    text-decoration: none;
+    color: #fff;
+}
+.last span{
+    margin-left: 2em;
+}
+/* Styling of footer for width 600px */
+@media only screen and (max-width:600px){
+    .foot{
+        margin-top: 88em;
+        height: fit-content;
+        width: 100%;
+       
+    }
+    .foot div{
+        width: 80%;
+    }
+    .foots{
+        height: fit-content;
+        width: 100%;
+        
+    }
+}
+@media only screen and (max-width:425px){
+    .foot{
+        margin-top: 49em;
+        height: fit-content;
+        display: block;
+        width: 100%;
+    }
+    .foots{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:785px){
+    .foot{
+        margin-top:8em ;
+    }
+    }
+@media only screen and (max-width:400px){
+.foot{
+    margin-top: 55em;
+}
+}
+@media only screen and (max-width:600px){
+    .foot{
+        margin-top: 50em;
+        height: fit-content;
+        width: 100%;
+       
+    }
+    .foot div{
+        width: 80%;
+    }
+    .foots{
+        height: fit-content;
+        width: 100%;
+        
+    }
+}
+@media only screen and (max-width:344px){
+    .foot{
+        margin-top: 55em;
+    }
+    }
+
+
+   
+
+
+
+    
+
+
+

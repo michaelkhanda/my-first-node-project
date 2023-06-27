@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delicious Eats</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: lightsalmon;
+        font-family: Arial, sans-serif;
+      }
+      
+      header{
+        background-color:#FF6A00;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 100%;
+        height: 4em;
+    }
+    header ul{
+        display: flex;
+        justify-content: flex;
+        position: absolute;
+        float: none;
+        text-align: centre;
+        margin: -2.7%;
+        position: relative;
+        margin-left: 80%;
+        
+        
+    }
+    
+    header ul li {
+        list-style-type: none; 
+    }
+    header ul li a{
+        margin-right: 2em;
+        text-decoration: none;
+        font-size: 1.2em;
+        color: white;
+        padding: 0.5em;
+    }
+     
+    header ul li a:hover{
+        background-color: lightsalmon;
+    }
+
+    /* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+    header ul, header ul li,header ul li a {
+      float: none;
+      display: block;
+    }
+    
+    .topnav-centered a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
+
+    * {
+        box-sizing: border-box;
+      }
+      /* Float four columns side by side */
+.column {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: lightpink;
+    
+  } 
+
+  /* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  footer {
+    background-color: #FF6A00;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 10%;
+    display:flex;
+    flex-direction:column; 
+    justify-content:space-between; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6%;
+  }
+
+  h6{
+    text-align: center;
+    margin-left: 82.4%;
+  }
+
+    
+
+    
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Beginning of Navigation bar -->
+      <div>
+        <h6>Delicious Eats</h6>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Breakfast</a></li>
+            <li><a href="#">Lunch</a></li>
+            <li><a href="#">Dinner</a></li>
+            <li><a href="#">Drinks</a></li>
+
+          </ul>
+        </nav>
+        <!-- End of Nvigation bar -->
+      </div>
+    </header>
+
+    <br><br>
+    
+
+    <section>
+        <div class="row">
+            <div class="column">
+              <div class="card">
+                <h3>Breakfast Menu</h3>
+                <p>Pancakes - KES 450</p>
+                <p>Egg Benedict - KES 500</p>
+                <p>French Toast - KES 400</p>
+                <p>Oatmeal - KES 300</p>
+                <p>Bagel with cream cheese - KES 350</p>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <h3>Lunch Menu</h3>
+                <p>Hamburger - KES 500</p>
+                <p>BLT Sandwich - KES 450</p>
+                <p>Chicken Ceasear Salad - KES600</p>
+                <p>Veggie wrap - KES 500</p>
+                <p>Soup of the day - KES 400</p>
+              </div>
+            </div>
+    </section>
+<br><br>
+    <section>
+        <div class="row">
+            <div class="column">
+              <div class="card">
+                <h3>Dinner Menu</h3>
+                <p>Steak - KES 900</p>
+                <p>Grilled Salmon - KES 800</p>
+                <p>Roasted Chicken - KES 700</p>
+                <p>Beef Stroganoff - KES 650</p>
+                <p>Mushroom Risotto - KES 500</p>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <h3>Drinks Menu</h3>
+                <p>Soda - KES 100</p>
+                <p>Iced Tea - KES 150</p>
+                <p>Coffee - KES250</p>
+                <p>Milk Shake - KES 500</p>
+                <p>Cocktail - KES 400</p>
+              </div>
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Delicious Eats. All rights reserved.</p>
+    </footer>
+
+    
+    
+
+  </body>
+</html>

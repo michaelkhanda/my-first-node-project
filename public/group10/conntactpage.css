@@ -1,0 +1,847 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    background-color:hsla(120, 100%, 13%, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    position: fixed;
+    width: 100%;
+    height: 4em;
+    
+}
+header ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -1em;
+}
+
+header ul li {
+    list-style-type: none; 
+}
+header ul li a{
+    margin-right: 2em;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    padding: 0.5em;
+    
+    
+}
+ .logo{
+    margin-left: 2em;
+    padding-top: 0.5em;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: lightgreen;
+    cursor: pointer;
+    
+}
+.logo img{
+height: 4em;
+width: 4em;
+}
+header ul li a:hover{
+    background-color: hsla(120, 80%, 44%, 0.9);
+    border-radius: 1em;
+}
+/*End of header section design*/
+/*Header styling for small devices different devices*/
+@media only screen and (max-width:600px){
+    header{
+        display: none;
+    }
+    
+    
+}
+@media only screen and (max-width:813px){
+    header{
+        font-size: .7em;
+    }
+}
+
+/*Header and navigation section*/
+ 
+
+ .dropdown {
+    
+    display: none;
+  } 
+.dropbtn {
+    height: 3em;
+    width: 3em;
+  }
+   .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:hsla(120, 100%, 13%, 0.6);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;
+color: black;
+}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  @media only screen and (max-width:600px){
+    .dropdown{
+        display: inline-block;
+        position: fixed;
+    }
+  } 
+  
+
+/*End of menubar*/
+
+
+   
+
+ 
+ img{
+    height: 40em;
+    width: 100%;
+}
+
+#head{
+    margin-left: 70px;
+    border-bottom: 2px hsla(120, 80%, 44%, 0.9) solid;
+    padding-bottom: 0.5em;
+    width: fit-content;
+}
+#para1{
+
+    font-size:x-large;
+    font-weight: bold;
+   
+}
+#maindiv{
+    display: flex;
+   
+    justify-content: space-around;
+}
+#para2{
+    
+    font-size: 20px;
+}
+.div1{
+    width: 50%;
+
+}
+.div2{
+    width: 30%;
+    background-color: #004b4b;
+    height: 30em;
+    margin-top: 20em;
+}
+.fn{
+    height: 4em;
+    width: 50em;
+    border-radius: 0.3em;
+}
+.fn:hover{
+    box-shadow: 2px 3px 4px #004b4b;
+}
+.ft{
+    width: 50em;
+}
+.fb{
+    background-color: #004b4b;
+    color: white;
+    height: 3em;
+    width: 9em;
+    border-radius: 1em;
+    
+}
+.fb:hover{
+    background: hsla(120, 80%, 44%, 0.9);
+}
+#pp{
+    color: red;
+    cursor: pointer;
+}
+#image{
+    height: 16em;
+}
+li{
+    margin: 1.5em 0 0 1.5em;
+    color: white;
+    font-size: 1.2em;
+    
+}
+@media only screen and (max-width:1115px){
+ 
+    header{
+        font-size: .7em;
+    }
+  #maindiv{
+    display: flex;
+    justify-content: space-around;
+    
+  }
+ #para2{
+    
+    font-size: 1.2em;
+ }
+ 
+ .div1{
+    width: 40em;
+  margin-left: 4em;
+ }
+ .div2{
+    width: 40em;
+    background-color: #004b4b;
+    height: 33em;
+   margin-left: 3em;
+    margin-right: 3em; 
+ }
+ 
+.fn{
+    height: 4em;
+    width: 45em;
+    border-radius: 0.3em;
+}
+.ft{
+    width: 45em;
+}
+
+   
+}
+@media only screen and (max-width:969px) {
+    #para2{
+    
+        font-size: 1.2em;
+     }
+     
+     .div1{
+        width: 30em;
+      margin-left: 2em;
+     }
+     .div2{
+        width: 35em;
+        background-color: #004b4b;
+        height: 33em;
+       margin-left: 3em;
+        margin-right: 2.5em; 
+     }
+     
+    .fn{
+        height: 4em;
+        width: 33em;
+        border-radius: 0.3em;
+    }
+    .ft{
+        width: 33em;
+    }
+    #head{
+        margin-left: 1.5em;
+        border-bottom: 2px hsla(120, 100%, 13%, 0.6) solid;
+        padding-bottom: 0.7em;
+        width: fit-content;
+        font-size: medium;
+        padding-top: 0.5em;
+    }
+    li{
+        margin: 1.2em 0 0 1.2em;
+        color: white;
+        font-size: 1.1em;
+        
+    }
+    
+}
+@media only screen and (max-width:773px) {
+    li{
+        margin: 1.2em 0 0 1em;
+        color: white;
+        font-size: 1em;
+        
+    }
+    .div2{
+        width: 35em;
+        background-color: #004b4b;
+        height: 30em;
+       margin-left: 3em;
+        margin-right: 2em; 
+     }
+     
+    
+}
+@media only screen and (max-width:724px) {
+    img{
+        height: 30em;
+        width: 100%;
+    }
+    .div1{
+    width: 25em;
+      margin-left: 2em;
+     }
+     .div2{
+        width: 30em;
+        background-color: #004b4b;
+        height: 28em;
+       margin-left: 3em;
+        margin-right: 2.5em; 
+     }
+     
+    .fn{
+        height: 3em;
+        width: 30em;
+        border-radius: 0.3em;
+    }
+    .ft{
+        width: 30em;
+    }
+    li{
+        margin: 1.2em 0 0 1em;
+        color: white;
+        font-size: 0.9em;
+        
+    }
+    
+}
+@media only screen and (max-width:664px) {
+    img{
+        height: 30em;
+        width: 100%;
+    }
+    #para2{
+    
+        font-size: 1.2em;
+     }
+     
+     .div1{
+        width: 25em;
+      margin-left: 5em;
+     }
+     .div2{
+        width: 30em;
+        background-color: #004b4b;
+        height: 28em;
+       margin-left: 3em;
+        margin-right: 3.5em; 
+     }
+     
+    .fn{
+        height: 3em;
+        width: 28em;
+        border-radius: 0.3em;
+    }
+    .ft{
+        width: 28em;
+    }
+    #head{
+        margin-left: 1.5em;
+        border-bottom: 2px hsla(120, 100%, 13%, 0.6) solid;
+        padding-bottom: 0.7em;
+        width: fit-content;
+        font-size: small;
+        padding-top: 0.5em;
+    }
+    li{
+        margin: 1em 0 0 0.9em;
+        color: white;
+        font-size: 0.9em;
+        
+    }
+    
+}
+@media only screen and (max-width:648px) {
+    #head{
+        margin-left: 60px;
+        border-bottom: 2px hsla(120, 100%, 13%, 0.6) solid;
+        padding-bottom: 0.5em;
+        width: fit-content;
+        font-size: large;
+    }
+    .div1{
+        width: 30em;
+      margin-left: 3em;
+     }
+    #maindiv{
+        display: block;
+         
+    }
+    .div2{
+       display: none; 
+     }
+     li{
+        margin: 1em 0 0 0.9em;
+        color: white;
+        font-size: 0.7em;
+        
+    }
+    #para1{
+
+        font-size:x-large;
+        font-weight: bold;
+        color: hsla(120, 80%, 44%, 0.9);
+       
+    }
+    .fn{
+        height: 4em;
+        width: 40em;
+        border-radius: 0.3em;
+    }
+    .ft{
+        width: 40em;
+    }
+    
+}
+@media only screen and (max-width:600px) {
+    #maindiv{
+        display: block;
+         
+    }
+
+    .div2{
+        display: none; 
+     }
+     #head{
+        margin-left: 60px;
+        border-bottom: 2px hsla(120, 100%, 13%, 0.6) solid;
+        padding-bottom: 0.5em;
+        width: fit-content;
+        font-size: large;
+    }
+    .div1{
+        width: 25em;
+      margin-left: 3em;
+     }
+     .fn{
+        height: 4em;
+        width: 35em;
+        border-radius: 0.3em;
+    }
+    .ft{
+        width: 35em;
+    }
+    #para1{
+
+        font-size:x-large;
+        font-weight: bold;
+        color: hsla(120, 80%, 44%, 0.9);
+       
+    }
+}
+@media only screen and (max-width: 540px) {
+    #head{
+        margin-left: 35px;
+        border-bottom: 2px hsla(120, 100%, 13%, 0.6) solid;
+        padding-bottom: 0.5em;
+        width: fit-content;
+        font-size: large;
+    }
+    .div1{
+        width: 23em;
+      margin-left: 2.5em;
+     }
+     .fn{
+        height: 3em;
+        width: 33em;
+        border-radius: 0.3em;
+    }
+    .ft{
+        width: 33em;
+    }
+    
+}
+@media only screen and (max-width:510px) {
+    #head{
+        margin-left: 35px;
+        border-bottom: 2px hsla(120, 100%, 13%, 0.6) solid;
+        padding-bottom: 0.5em;
+        width: fit-content;
+        font-size: 1em;
+    }
+    .div1{
+        width: 23em;
+      margin-left: 2.1em;
+     }
+     .fn{
+        height: 3em;
+        width: 32em;
+        border-radius: 0.3em;
+    }
+    .ft{
+        width: 32em;
+    }
+    
+}
+@media only screen and (max-width:480px) {
+    #head{
+        margin-left: 35px;
+        border-bottom: 2px hsla(120, 100%, 13%, 0.6) solid;
+        padding-bottom: 0.5em;
+        width: fit-content;
+        font-size: 0.9em;
+    }
+    .div1{
+        width: 23em;
+      margin-left: 2.1em;
+     }
+     .fn{
+        height: 3em;
+        width: 30em;
+        border-radius: 0.3em;
+    }
+    .ft{
+        width: 30em;
+    }
+
+}
+@media only screen and (max-width:453px) {
+
+    .div1{
+        width: 24em;
+      margin-left: 2em;
+     }
+     .fn{
+        height: 3em;
+        width: 28em;
+        border-radius: 0.3em;
+    }
+    .ft{
+        width: 28em;
+    }
+}
+@media only screen and (max-width:433px) {
+    #head{
+        margin-left: 25px;
+        border-bottom: 2px hsla(120, 100%, 13%, 0.6) solid;
+        padding-bottom: 0.5em;
+        width: fit-content;
+        font-size: 0.9em;
+    }
+    .div1{
+        width: 24em;
+      margin-left: 1.3em;
+     }
+     
+}
+@media only screen and (max-width:421px) {
+    #head{
+        margin-left: 20px;
+        border-bottom: 2px hsla(120, 100%, 13%, 0.6) solid;
+        padding-bottom: 0.5em;
+        width: fit-content;
+        font-size: 0.9em;
+    }
+    .div1{
+        width: 24em;
+      margin-left: 1em;
+     }
+    
+}
+@media only screen and (max-width:416px) {
+    #head{
+        margin-left: 20px;
+        border-bottom: 2px hsla(120, 100%, 13%, 0.6) solid;
+        padding-bottom: 0.5em;
+        width: fit-content;
+        font-size: 0.8em;
+    }
+    .div1{
+        width: 22em;
+      margin-left: 1.8em;
+     }
+     .fn{
+        height: 2.8em;
+        width: 26em;
+        border-radius: 0.3em;
+    }
+    .ft{
+        width: 26em;
+    }
+    #para2{
+    
+        font-size: 1.1em;
+     }
+     
+    
+}
+@media only screen and (max-width:397px) {
+    #head{
+        margin-left: 20px;
+        border-bottom: 2px hsla(120, 100%, 13%, 0.6) solid;
+        padding-bottom: 0.5em;
+        width: fit-content;
+        font-size: 0.8em;
+    }
+    .div1{
+        width: 21em;
+      margin-left: 1.3em;
+     }
+     .fn{
+        height: 2.8em;
+        width: 26em;
+        border-radius: 0.3em;
+    }
+    .ft{
+        width: 26em;
+    }
+    #para2{
+    
+        font-size: 1.1em;
+     }
+     
+ img{
+    height: 28em;
+    width: 100%;
+}
+     
+    
+}
+@media only screen and (max-width:384px) {
+   
+    .div1{
+        width: 21em;
+      margin-left: 1em;
+     }
+     .fn{
+        height: 2.8em;
+        width: 25em;
+        border-radius: 0.3em;
+    }
+    .ft{
+        width: 25em;
+    }
+    
+  
+}
+@media only screen and (max-width:368px) {
+    #head{
+        margin-left: 20px;
+        border-bottom: 2px hsla(120, 100%, 13%, 0.6) solid;
+        padding-bottom: 0.5em;
+        width: fit-content;
+        font-size: 0.7em;
+    }
+    .div1{
+        width: 20em;
+      margin-left: 1.3em;
+     }
+     .fn{
+        height: 2.8em;
+        width: 24em;
+        border-radius: 0.3em;
+    }
+    .ft{
+        width: 24em;
+    }
+    #para2{
+    
+        font-size: 1em;
+     }
+     
+ img{
+    height: 27em;
+    width: 100%;
+}
+     
+    
+}
+
+@media only screen and (max-width:357px) {
+   
+    .div1{
+        width: 18em;
+      margin-left: 1.3em;
+     }
+     .fn{
+        height: 2.8em;
+        width: 23em;
+        border-radius: 0.3em;
+    }
+    .ft{
+        width: 23em;
+    }
+    #para2{
+    
+        font-size: 1em;
+     }
+     
+ img{
+    height: 27em;
+    width: 100%;
+}
+     
+    
+}
+
+@media only screen and (max-width:344px) {
+   
+    .div1{
+        width: 16em;
+      margin-left: 1.3em;
+     }
+     .fn{
+        height: 2.8em;
+        width: 21em;
+        border-radius: 0.3em;
+    }
+    .ft{
+        width: 21em;
+    }
+    #para2{
+    
+        font-size: 1em;
+     }
+     
+ img{
+    height: 27em;
+    width: 100%;
+}
+     
+    
+}
+
+@media only screen and (max-width:325px) {
+    #head{
+        margin-left: 17px;
+        border-bottom: 2px hsla(120, 100%, 13%, 0.6) solid;
+        padding-bottom: 0.5em;
+        width: fit-content;
+        font-size: 0.6em;
+    }
+    .div1{
+        width: 17em;
+      margin-left: 1.3em;
+     }
+     .fn{
+        height: 2.8em;
+        width: 20em;
+        border-radius: 0.3em;
+    }
+    .ft{
+        width: 20em;
+    }
+    #para2{
+    
+        font-size: 0.8em;
+     }
+     
+ img{
+    height: 26em;
+    width: 100%;
+}   
+}
+@media only screen and (max-width:309px) {
+    .div1{
+        width: 15em;
+      margin-left: 1.1em;
+     }
+}
+
+/*Beginning of footer*/
+.foots{
+    width: 100%;
+    height: 17em;
+    background-color: hsla(120, 100%, 20%, 0.9);
+}
+.foot{
+    width: 100%;
+    height: 14em;
+    
+    color: white;
+    display: flex;
+}
+/*styling for break point 620px*/
+.foot div{
+    width: 32%;
+    text-align: justify;
+    margin-left: 8%;
+}
+.foot div li{
+    list-style-type: none;
+    font-size: 1em;
+    margin-left: 0em;
+    
+}
+.foot div li a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 1.5em;
+
+}
+#parafoot{
+    line-height: 1.5em;
+}
+.last span{
+    margin-left: 2em;
+}
+/* Styling of footer for width 600px */
+@media only screen and (max-width:600px){
+    .foot{
+        margin-top: 88em;
+        height: fit-content;
+        width: 100%;
+       
+    }
+    .foot div{
+        width: 80%;
+    }
+    .foots{
+        height: fit-content;
+        width: 100%;
+        
+    }
+}
+@media only screen and (max-width:425px){
+    .foot{
+        margin-top: 49em;
+        height: fit-content;
+        display: block;
+        width: 100%;
+    }
+    .foots{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:785px){
+    .foot{
+        margin-top:2em ;
+    }
+    }
+@media only screen and (max-width:400px){
+.foot{
+    margin-top: 55em;
+}
+}
+@media only screen and (max-width:600px){
+    .foot{
+        margin-top: 2em;
+        height: fit-content;
+        width: 100%;
+       
+    }
+    .foot div{
+        width: 80%;
+    }
+    .foots{
+        height: fit-content;
+        width: 100%;
+        
+    }
+}
+@media only screen and (max-width:337px){
+    .foot{
+        margin-top: 2em;
+    }
+    }
+
+
